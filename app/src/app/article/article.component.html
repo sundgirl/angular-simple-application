@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="statistic">
+        <div class="value">{{ article.votes }}</div>
+        <div class="label">Points</div>
+    </div>
+    <div class="description">
+        <a href="{{ article.link }}" class="header">{{ article.title }}</a>
+        <ul class="voters">
+            <li class="item">
+                <a href="" (click)="voteUp()">upvote</a>
+            </li>
+            <li class="item">
+                <a href="" (click)="voteDown()">downvote</a>
+            </li>
+        </ul>
+    </div>
+</div>
